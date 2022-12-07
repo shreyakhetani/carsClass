@@ -10,11 +10,11 @@ package cars;
 			car1.printData();
 			car1.refule(5);
 			
-			Car car2 = new Car("Fiat", 400, 40);
+			Car car2 = new Car("Fiat", 400, 40,"Grey");
 			car2.printData();
 			car2.printData();
 			
-			Car car3 = new Car("Honda" , 600, 60);
+			Car car3 = new Car("Honda" , 600, 60,"White");
 			car3.printData();
 			car3.printData();
 		}
@@ -27,6 +27,7 @@ package cars;
 		public String brand;
 		public int model;
 		public int amountOfFuel;
+		public String color;
 // Default constructor
 		public Car()
 		{
@@ -34,14 +35,16 @@ package cars;
 			brand = "Fiat";
 			model = 500;
 			amountOfFuel = 50;
+			color = "black";
 		}
 //	parameterized constructor
-		public Car(String brand, int model, int amountOfFuel)
+		public Car(String brand, int model, int amountOfFuel, String color)
 		{
 			accelerate = true;
 			this.brand =brand;
 			this.model = model;
 			this.amountOfFuel = amountOfFuel;
+			this.color = color;
 		}
 			
 		public void brake()
@@ -66,6 +69,7 @@ package cars;
 			out.println("Brand: " + brand);
 			out.println("Model: " + model);
 			out.println("Fuel: " + amountOfFuel);
+			out.println("Color: " + color);
 		
 		if(accelerate == true)
 		{
