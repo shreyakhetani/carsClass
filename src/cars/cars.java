@@ -24,7 +24,7 @@ package cars;
 		public String brand;
 		public int model;
 		public int amountOfFuel;
-
+// Default constructor
 		public Car()
 		{
 			accelerate = true;
@@ -32,7 +32,7 @@ package cars;
 			model = 500;
 			amountOfFuel = 50;
 		}
-		
+//	parameterized constructor
 		public Car(String brand, int model, int amountOfFuel)
 		{
 			accelerate = true;
