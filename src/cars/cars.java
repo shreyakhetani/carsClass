@@ -14,6 +14,9 @@ package cars;
 			car2.printData();
 			car2.printData();
 			
+			Car car3 = new Car("Honda" , 600, 60);
+			car3.printData();
+			car3.printData();
 		}
 
 	}
